@@ -21,5 +21,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use(require("./routes/author_routes"));
+app.use(require("./routes/blog_routes"));
 
 app.listen(port, () => console.log(`Server is listening on port ${port}`));

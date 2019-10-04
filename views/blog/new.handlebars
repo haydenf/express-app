@@ -1,0 +1,63 @@
+<style>
+  
+    .box {
+        height: 230vh;
+        width: auto;
+        background-color: #636682;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1 {
+        color: #fac5b2;
+        font-size: 3em;
+    }
+
+    .field {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fac5b2;
+    }
+    .button {
+        display:flex;
+        justify-content: center;
+        margin-top: 4%;
+       color: #fac5b2;
+
+    }
+</style>
+<div class="box">
+<h1>New blog</h1>
+
+<div class="field">
+  <label class="label">Title</label>
+  <div class="control">
+    <input class="input" type="text" name="blogs" placeholder="e.g Alex Smith">
+  </div>
+</div>
+
+<div class="field">
+  <label class="label">Content</label>
+  <div class="control">
+    <textarea class="input" name="content"></textarea>
+     <button class="button is-primary" type="submit">Submit</button>
+  </div>
+</div>
+{{!-- <div class="field">
+<form method="post" action="/blogs">
+        <label>Title</label>
+    <div class="control">
+        <input type="text" name="title" />
+    </div>
+ 
+        <label>Content</label>
+    <div class="control">
+        <textarea name="content"></textarea>
+    </div>
+     <button class="button is-primary" type="submit">Submit</button>
+</div>
+</form>
+</div> --}}
+</div>

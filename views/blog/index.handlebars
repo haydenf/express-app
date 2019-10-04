@@ -1,0 +1,56 @@
+<style>
+    .box {
+        height: 230vh;
+        width: auto;
+        background-color: #636682;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .card {
+        width: 500px;
+        margin-bottom: 2%;
+    }
+    .content {
+        width: 200px;
+    }
+
+        a:link {
+        color: red;
+        }
+        a:visited {
+        color: #fac5b2;
+        }
+        a:hover {
+        color: black;
+        }
+        a:active {
+        color: blue;
+        }
+        .title, #content {
+            display:flex;
+            justify-content: center;
+
+        }
+ 
+
+</style>
+<div class="box">
+    <h1 class="title" style="color: #fac5b2 ">Blog</h1>
+    <a href="/blogs/new" class="subtitle">Create New blog</a>
+
+{{#each blogs}}
+<div class="card" >
+  <div class="card-content" style="background-color:#585f70;">
+    <p class="title" style="color: #fac5b2 "> {{ this.title }} </p>
+    <p id="content" style="color: #fac5b2 "> {{ this.content }} </p>
+  </div>
+
+</div>
+
+
+{{/each}}
+</div>
+{{!-- <a href="/authors/{{this._id}}">View Author</a> --}}
+{{!-- <a href="/authors/{{this._id}}?_method=DELETE">Delete Author</a> --}}
